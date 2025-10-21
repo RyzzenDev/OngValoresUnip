@@ -1,0 +1,496 @@
+body { 
+    font-family: 'Poppins', Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.6; 
+    color: #333; 
+    background-color: #FFF8F0; /* Fundo claro alaranjado suave para acolhimento */
+}
+header { 
+    background: linear-gradient(to right, #FF9500, #FFB347); /* Gradiente laranja para dinamismo infantil */
+    color: white; 
+    padding: 2rem 1rem; 
+    text-align: center; 
+    border-radius: 0 0 20px 20px; /* Bordas arredondadas na base do header */
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.logo-header {
+    width: 120px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 149, 0, 0.3);
+}
+header h1 { 
+    margin: 0; 
+    font-weight: 600; 
+    font-size: 2.5rem; 
+    flex: 1;
+}
+header p { margin: 0.5rem 0 0 0; }
+nav { 
+    background: #FF9500; /* Laranja para consistência */
+    padding: 0.5rem; 
+    box-shadow: 0 2px 5px rgba(255, 149, 0, 0.3); /* Sombra sutil para profundidade */
+}
+nav ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; /* Responsivo para mobile */
+}
+nav li { 
+    margin: 0 1rem; 
+}
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: 400; 
+    padding: 0.5rem 1rem; 
+    border-radius: 15px; 
+    transition: background 0.3s; /* Suaviza hover para interatividade infantil */
+}
+nav a:hover { 
+    background: rgba(255, 255, 255, 0.2); 
+}
+main { 
+    max-width: 900px; 
+    margin: 2rem auto; 
+    padding: 0 1rem; 
+}
+section { 
+    margin-bottom: 3rem; 
+    padding: 1.5rem; 
+    background: white; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(255, 149, 0, 0.1); /* Sombra laranja sutil para leveza */
+}
+section h2 { 
+    color: #FF9500; 
+    font-weight: 600; 
+    border-bottom: 2px solid #FFB347; 
+    padding-bottom: 0.5rem; 
+}
+.logo-contact {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 100px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 149, 0, 0.2);
+}
+footer { 
+    background: #FF9500; 
+    color: white; 
+    text-align: center; 
+    padding: 1.5rem; 
+    border-radius: 20px 20px 0 0; 
+}
+footer a { color: #FFB347; text-decoration: none; }
+.btn { 
+    background: #FF9500; 
+    color: white; 
+    padding: 0.8rem 1.5rem; 
+    text-decoration: none; 
+    border-radius: 20px;
+    font-weight: 400; 
+    transition: background 0.3s; 
+    display: inline-block; 
+    margin-top: 1rem; 
+}
+.btn:hover { 
+    background: #E68900; /* Laranja mais escuro no hover */
+}
+ul { 
+    padding-left: 1.5rem; 
+}
+form { 
+    max-width: 500px; 
+}
+input, textarea { 
+    width: 100%; 
+    padding: 0.8rem; 
+    border: 2px solid #FFB347; 
+    border-radius: 10px; 
+    margin-bottom: 1rem; 
+    font-family: inherit; 
+    box-sizing: border-box;
+}
+button { 
+    background: #FF9500; 
+    color: white; 
+    border: none; 
+    padding: 0.8rem 1.5rem; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-family: inherit; 
+    font-weight: 400; 
+}
+button:hover { 
+    background: #E68900; 
+}
+
+/* Estilos para imagens espalhadas */
+img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(255, 149, 0, 0.2); /* Sombra laranja suave */
+    margin: 1rem 0; 
+}
+.projeto-img { 
+    width: 200px; 
+    float: left; 
+    margin-right: 1rem; 
+    border-radius: 15px; 
+}
+.clear { clear: both; } /* Limpa float para projetos */
+.projeto { margin-bottom: 2rem; }
+
+/* Estilos para o Slider no #inicio (Carrossel 1) */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(255, 149, 0, 0.3);
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transição suave para troca de imagens */
+    height: 400px; /* Altura fixa; ajuste conforme necessário */
+}
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* Imagem cobre a área sem distorcer */
+    border-radius: 0; /* Remove borda do slider para full-width */
+}
+.slider-dots {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #FFB347;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dot.active {
+    background-color: #FF9500;
+}
+.dot:hover {
+    background-color: #E68900;
+}
+.slider-prev, .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 149, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: background 0.3s;
+    z-index: 10;
+}
+.slider-prev { left: 10px; }
+.slider-next { right: 10px; }
+.slider-prev:hover, .slider-next:hover { background: #FF9500; }
+.slider-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Estilos para o Carrossel 2 (.meu-carrossel) */
+.meu-carrossel {
+    position: relative;
+    width: 800px; /* Ajustado para 100% no @media */
+    height: 450px; /* Ajustado no @media */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 100%; /* Garante que não estoure o container */
+}
+.meu-carrossel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.meu-carrossel-slide {
+    min-width: 100%;
+    height: 100%;
+}
+.meu-carrossel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0; /* Reseta margem da regra geral de img */
+    border-radius: 0; /* Reseta borda da regra geral de img */
+}
+.meu-carrossel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.meu-carrossel-buttons button {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 32px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.meu-carrossel-buttons button:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+/* Estilos da seção #como-apoiar */
+#como-apoiar {
+    margin: 0;
+    padding: 0;
+}
+.apoiar-container {
+    background: linear-gradient(135deg, #c76900, #ff8800);
+    min-height: 100vh; /* tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+}
+.apoiar-content {
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+}
+.apoiar-content h1 { /* H1 em vez de H2 para o título da seção */
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.apoiar-content p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+.apoios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+}
+.apoio-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    padding: 1.8rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.apoio-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.15);
+}
+.apoio-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+.apoio-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.95;
+    margin-bottom: 0; /* Reseta margin-bottom */
+}
+
+/* Estilos da seção #contato */
+#contato {
+    margin: 0;
+    padding: 0;
+}
+.contato-container {
+    background: linear-gradient(135deg, #E67E00, #FF9500);
+    min-height: 100vh; /* ocupa a tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+}
+.contato-content {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.contato-content h1 { /* H1 em vez de H2 */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.contato-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.contato-content form input,
+.contato-content form textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+.contato-content form button {
+    background: white;
+    color: #E67E00;
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contato-content form button:hover {
+    background: #FFD699;
+}
+.contato-info {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+.contato-info p {
+    font-size: 0.95rem; /* Garante que os <p> dentro de info sejam menores */
+    margin-bottom: 1rem;
+}
+
+/* Estilos do #rodape */
+#rodape {
+    margin: 0;
+    padding: 0;
+}
+.rodape-container {
+    background: #1e1e1e;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.rodape-content h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.rodape-content p {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-bottom: 1.5rem;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.social-icons a {
+    color: #f5f5f5;
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: #ff9500;
+    transform: scale(1.15);
+}
+.rodape-content hr {
+    width: 60%;
+    margin: 1rem auto;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.copy {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+
+/* Responsividade básica para mobile */
+@media (max-width: 768px) {
+    .header-content { flex-direction: column; text-align: center; gap: 0.5rem; }
+    .logo-header { width: 80px; }
+    nav ul { flex-direction: column; align-items: center; }
+    nav li { margin: 0.5rem 0; }
+    header h1 { font-size: 2rem; }
+    .slider { height: 250px; }
+    .slide img { height: 250px; }
+    .projeto-img { width: 100%; float: none; margin: 0 0 1rem 0; }
+    .logo-contact { width: 80px; }
+
+    /* Responsivo Carrossel 2 */
+    .meu-carrossel {
+        width: 100%; /* Ocupa a largura total */
+        height: 250px; /* Altura menor para mobile */
+    }
+    .meu-carrossel-buttons button {
+        font-size: 24px;
+        padding: 5px 10px;
+    }
+
+    /* Responsivo Como Apoiar */
+    .apoiar-content h1 { /* h1 em vez de h2 */
+        font-size: 1.8rem;
+    }
+    .apoio-card {
+        padding: 1.3rem;
+    }
+
+    /* Responsivo Contato */
+    .contato-content {
+        padding: 1.5rem;
+    }
+    .contato-content h1 { /* h1 em vez de h2 */
+        font-size: 1.6rem;
+    }
+
+    /* Responsivo Rodapé */
+    .rodape-content h3 {
+        font-size: 1.3rem;
+    }
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
