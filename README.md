@@ -4,7 +4,7 @@ Este projeto é um site institucional (landing page) criado para a **ONG Resgata
 
 ## Contexto do Projeto
 
-O site foi desenvolvido como parte de uma atividade acadêmica para a matéria de **[Nome da Matéria/Disciplina Aqui]** do curso de **[Analise e desenvolvimento de sistemas]** da faculdade **[Universidade Paulista - UNIP]**.
+O site foi desenvolvido como parte de uma atividade acadêmica para a matéria de **[Gerenciamento de projetos de software]** do curso de **[Analise e desenvolvimento de sistemas]** da faculdade **[Universidade Paulista - UNIP]**.
 
 O principal objetivo é aplicar os conhecimentos de desenvolvimento front-end (HTML, CSS e JavaScript) para criar uma presença digital funcional para a ONG, ajudando a divulgar sua missão, valores e, principalmente, seus canais de apoio e doação.
 
