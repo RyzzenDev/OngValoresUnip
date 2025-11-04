@@ -451,8 +451,53 @@ img {
     margin-bottom: 0;
 }
 
+
+/* =================================== */
+/* Estilos da Seção Patrocinadores     */
+/* (LOCAL CORRETO - ANTES DO @media)   */
+/* =================================== */
+#patrocinadores {
+    text-align: center; 
+}
+
+.patrocinadores-logos {
+    display: grid;
+    /* Força 4 colunas de tamanho igual */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; 
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 1rem; 
+}
+
+.patrocinadores-logos img {
+    max-width: 100%; 
+    height: auto;
+    /* Reseta a margem global */
+    margin: 0 auto; 
+    
+    /* Efeito bônus (opcional) */
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.patrocinadores-logos img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
 /* Responsividade básica para mobile */
 @media (max-width: 768px) {
+
+    /* Responsivo Patrocinadores (LOCAL CORRETO - DENTRO DO @media) */
+    .patrocinadores-logos {
+        /* Muda de 4 para 2 colunas no mobile */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem; /* Diminui o espaçamento */
+    }
+
     .header-content { flex-direction: column; text-align: center; gap: 0.5rem; }
     .logo-header { width: 80px; }
     nav ul { flex-direction: column; align-items: center; }
