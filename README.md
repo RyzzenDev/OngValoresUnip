@@ -29,7 +29,7 @@ Este projeto foi desenvolvido com dedicação por **[6]** estudantes:
 * **[Gabriel Tupinambá]** - ([Link do seu LinkedIn ou GitHub])
 * **[Vitor Cavalcante]** - ([Link do LinkedIn ou GitHub])
 * **[Vitor ]** - ([Link do LinkedIn ou GitHub])
-* **[Rodrigo]** - ([Link do LinkedIn ou GitHub])
+* **[Rodrigo Duppret]** - ([Link do LinkedIn ou GitHub])
 * **[Ryam]** - ([Link do LinkedIn ou GitHub])
 * **[Rayssa]** - ([Link do LinkedIn ou GitHub])
 
