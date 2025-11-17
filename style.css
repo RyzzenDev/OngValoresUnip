@@ -81,6 +81,9 @@ section h2 {
     font-weight: 600; 
     border-bottom: 2px solid #FFB347; 
     padding-bottom: 0.5rem; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .logo-contact {
     display: block;
@@ -149,6 +152,17 @@ img {
     box-shadow: 0 4px 10px rgba(255, 149, 0, 0.2); /* Sombra laranja suave */
     margin: 1rem 0; 
 }
+
+/* ===== INÍCIO DA ADIÇÃO ===== */
+/* Centraliza especificamente a imagem principal da seção "Sobre" */
+#sobre img[src="assets/ongprincipal.jpg"] {
+    display: block;       /* Necessário para aplicar margin auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ===== FIM DA ADIÇÃO ===== */
+
+
 .projeto-img { 
     width: 200px; 
     float: left; 
